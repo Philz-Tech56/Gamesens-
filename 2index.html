@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>GamesNHQ — Buy Accounts</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #070b18;
+    color: white;
+}
+
+header {
+    background: #0b1022;
+    padding: 15px 20px;
+    border-bottom: 1px solid #1c2a50;
+}
+
+.nav {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-area h2 {
+    color: #00d9ff;
+    font-size: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #00d9ff;
+}
+
+.hero {
+    text-align: center;
+    padding: 60px 20px 30px;
+}
+
+.hero h1 {
+    font-size: 38px;
+    color: #00d9ff;
+    margin-bottom: 12px;
+}
+
+.hero p {
+    color: #aeb8d0;
+    font-size: 16px;
+}
+
+.search-box {
+    max-width: 900px;
+    margin: 25px auto;
+    display: flex;
+    gap: 10px;
+    padding: 0 20px;
+}
+
+.search-box input,
+.search-box select {
+    background: #11182d;
+    color: white;
+    border: 1px solid #26375f;
+    border-radius: 8px;
+    padding: 14px;
+    outline: none;
+}
+
+.search-box input {
+    flex: 1;
+}
+
+.search-box select {
+    width: 180px;
+}
+
+.accounts {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.accounts h2 {
+    margin-bottom: 20px;
+    color: #00d9ff;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #0d1428;
+    border: 1px solid #1d2d52;
+    border-radius: 12px;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #00d9ff;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #aeb8d0;
+    margin-bottom: 8px;
+}
+
+.price {
+    color: #00d9ff;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.btn {
+    display: block;
+    text-align: center;
+    background: #00d9ff;
+    color: #06101c;
+    padding: 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #00b8d9;
+}
+
+footer {
+    margin-top: 60px;
+    padding: 25px;
+    text-align: center;
+    background: #0b1022;
+    color: #7f8ba8;
+}
+
+@media (max-width: 600px) {
+    .nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 0 7px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .search-box {
+        flex-direction: column;
+    }
+
+    .search-box select {
+        width: 100%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="nav">
+
+        <div class="logo-area">
+            <h2>🎮 GamesNHQ</h2>
+        </div>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#accounts">Accounts</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+    </div>
+</header>
+
+<section class="hero">
+
+    <h1>Buy Gaming Accounts</h1>
+
+    <p>
+        Find quality gaming accounts at affordable prices.
+    </p>
+
+    <div class="search-box">
+
+        <input
+            type="text"
+            id="search"
+            placeholder="Search for an account..."
+        >
+
+        <select id="category">
+            <option value="all">All Games</option>
+            <option value="freefire">Free Fire</option>
+            <option value="pubg">PUBG</option>
+            <option value="cod">Call of Duty</option>
+            <option value="fifa">EA FC</option>
+        </select>
+
+    </div>
+
+</section>
+
+<section class="accounts" id="accounts">
+
+    <h2>Featured Accounts</h2>
+
+    <div class="grid">
+
+        <div class="card" data-game="freefire">
+            <h3>Free Fire Account</h3>
+            <p>Level: 65</p>
+            <p>Rare skins included</p>
+            <div class="price">₦25,000</div>
+            <a href="#contact" class="btn">Buy Now</a>
+        </div>
+
+        <div class="card" data-game="pubg">
+            <h3>PUBG Mobile Account</h3>
+            <p>Level: 70</p>
+            <p>Premium items included</p>
+            <div class="price">₦35,000</div>
+            <a href="#contact" class="btn">Buy Now</a>
+        </div>
+
+        <div class="card" data-game="cod">
+            <h3>Call of Duty Account</h3>
+            <p>High-level account</p>
+            <p>Rare weapons included</p>
+            <div class="price">₦30,000</div>
+            <a href="#contact" class="btn">Buy Now</a>
+        </div>
+
+        <div class="card" data-game="fifa">
+            <h3>EA FC Account</h3>
+            <p>Ultimate Team</p>
+            <p>Premium players included</p>
+            <div class="price">₦40,000</div>
+            <a href="#contact" class="btn">Buy Now</a>
+        </div>
+
+    </div>
+
+</section>
+
+<footer id="contact">
+    <p>© 2026 GamesNHQ. All rights reserved.</p>
+    <p>Contact us to purchase an account.</p>
+</footer>
+
+<script>
+const searchInput = document.getElementById("search");
+const category = document.getElementById("category");
+const cards = document.querySelectorAll(".card");
+
+function filterAccounts() {
+
+    const searchText = searchInput.value.toLowerCase();
+    const selectedGame = category.value;
+
+    cards.forEach(function(card) {
+
+        const text = card.textContent.toLowerCase();
+        const game = card.dataset.game;
+
+        const matchesSearch = text.includes(searchText);
+
+        const matchesCategory =
+            selectedGame === "all" ||
+            game === selectedGame;
+
+        if (matchesSearch && matchesCategory) {
+            card.style.display = "block";
+        } else {
+            card.style.display = "none";
+        }
+
+    });
+}
+
+searchInput.addEventListener("input", filterAccounts);
+category.addEventListener("change", filterAccounts);
+</script>
+
+</body>
+</html>

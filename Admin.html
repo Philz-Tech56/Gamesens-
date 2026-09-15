@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GamesNHQ Admin</title>
+
+    <style>
+        body {
+            background: #070b18;
+            color: white;
+            font-family: Arial;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #00d9ff;
+        }
+
+        .order {
+            background: #10182e;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+
+        .pending {
+            color: #ffcc00;
+        }
+
+        .verified {
+            color: #00ff88;
+        }
+
+        button {
+            background: #00d9ff;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>🎮 GamesNHQ Admin</h1>
+
+    <h2>Orders</h2>
+
+    <div class="order">
+
+        <h3>Order #1001</h3>
+
+        <p>Game: Free Fire</p>
+
+        <p>Amount: ₦25,000</p>
+
+        <p>Customer: Customer</p>
+
+        <p>Status:
+            <span class="pending" id="status">
+                PAYMENT PENDING
+            </span>
+        </p>
+
+        <button onclick="verify()">
+            VERIFY PAYMENT
+        </button>
+
+    </div>
+
+    <script>
+        function verify() {
+            document.getElementById("status").innerHTML =
+                "PAYMENT VERIFIED";
+
+            document.getElementById("status").className =
+                "verified";
+
+            alert("Payment verified successfully!");
+        }
+    </script>
+
+</body>
+</html>

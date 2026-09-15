@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Accounts | GamesNHQ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="nav">
+
+        <a href="index.html" class="logo">
+            <img src="logo.jpg" alt="GamesNHQ">
+            <span>GamesNHQ</span>
+        </a>
+
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+        <nav id="navMenu">
+            <a href="index.html">Home</a>
+            <a href="buy.html">Buy Accounts</a>
+            <a href="sell.html">Sell Account</a>
+            <a href="community.html">Community</a>
+        </nav>
+
+    </div>
+</header>
+
+<section class="page-header">
+    <p class="tag">MARKETPLACE</p>
+    <h1>Buy Gaming Accounts</h1>
+    <p>Choose an account that matches what you're looking for.</p>
+</section>
+
+<section class="marketplace">
+
+    <div class="filters">
+
+        <input
+            type="text"
+            id="search"
+            placeholder="🔍 Search accounts..."
+            onkeyup="filterAccounts()"
+        >
+
+        <select id="gameFilter" onchange="filterAccounts()">
+            <option value="all">All Games</option>
+            <option value="Free Fire">Free Fire</option>
+            <option value="Call of Duty">Call of Duty</option>
+            <option value="PUBG">PUBG</option>
+            <option value="FIFA">FIFA</option>
+        </select>
+
+    </div>
+
+    <div class="account-grid" id="accountGrid">
+
+        <div class="account-card" data-game="Free Fire">
+
+            <div class="account-image">🔥</div>
+
+            <div class="account-info">
+
+                <span class="badge">FREE FIRE</span>
+
+                <h3>Free Fire High Level Account</h3>
+
+                <p>Level 70 • Rare Skins • Many Bundles</p>
+
+                <div class="account-bottom">
+                    <strong>₦35,000</strong>
+                    <a href="community.html" class="small-btn">Contact Seller</a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="account-card" data-game="Call of Duty">
+
+            <div class="account-image">🔫</div>
+
+            <div class="account-info">
+
+                <span class="badge">COD MOBILE</span>
+
+                <h3>COD Mobile Legendary Account</h3>
+
+                <p>Legendary Rank • Skins • Weapons</p>
+
+                <div class="account-bottom">
+                    <strong>₦50,000</strong>
+                    <a href="community.html" class="small-btn">Contact Seller</a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="account-card" data-game="PUBG">
+
+            <div class="account-image">🎯</div>
+
+            <div class="account-info">
+
+                <span class="badge">PUBG</span>
+
+                <h3>PUBG Premium Account</h3>
+
+                <p>High Rank • Premium Outfits • Skins</p>
+
+                <div class="account-bottom">
+                    <strong>₦45,000</strong>
+                    <a href="community.html" class="small-btn">Contact Seller</a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="account-card" data-game="FIFA">
+
+            <div class="account-image">⚽</div>
+
+            <div class="account-info">
+
+                <span class="badge">FIFA</span>
+
+                <h3>FIFA Ultimate Team Account</h3>
+
+                <p>Strong Squad • Good Players • Coins</p>
+
+                <div class="account-bottom">
+                    <strong>₦60,000</strong>
+                    <a href="community.html" class="small-btn">Contact Seller</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 GamesNHQ. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
